@@ -1,0 +1,25 @@
+.btn {
+  background-color: $blonde-wood;
+  color: $polar-bear;
+  border: none;
+  border-radius: 0;
+  font-family: $font-tertiary;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover{
+    background-color: $blazing-bonfire;
+    @include boxShadow;
+    transform: translateY(-.4rem);
+  }
+
+  &:active{
+    background-color: $blazing-bonfire;
+    @include boxShadow;
+    transform: translateY(0);
+  }
+}

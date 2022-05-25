@@ -1,0 +1,9 @@
+@mixin boxShadow {
+  box-shadow: 0 2rem 3rem rgba($color-black, .3);
+}
+
+@mixin cardIcon {
+  color: $flirt-alert;
+  font-size: 2rem;
+}
+

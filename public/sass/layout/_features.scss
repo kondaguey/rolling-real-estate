@@ -1,0 +1,10 @@
+.features {
+  display: grid;
+  grid-column: center-start / center-end;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+  margin: 15rem 0;
+
+}

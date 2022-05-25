@@ -1,0 +1,69 @@
+.header {
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(rgba($shasta-lake, .8), rgba($shasta-lake, .8)), url(../../img/winding-road.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
+
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content);
+  grid-template-columns: minmax(min-conten, max-content);
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-large ) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem;
+  }
+
+  &__logo {
+    height: 8rem;
+    justify-self: center;
+    @media only screen and (max-width: $bp-large) {
+      height: 12rem;
+    }
+  }
+
+  &__btn {
+    align-self: start;
+    justify-self: start;
+  }
+
+  &__seenon-text {
+    font-size: 1.6rem;
+    color: $polar-bear;
+    
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+ 
+    &::before,
+    &::after {
+      content: "";
+      height: .1rem;
+      display: block;
+      background-color: $beachside-drive;
+    }
+  }
+
+  &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+
+  img {
+    max-height: 5rem;
+    max-width: 100%;
+    filter: brightness(115%);
+    
+  }
+  
+  }
+}

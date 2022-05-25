@@ -1,12 +1,26 @@
 // 1. ABSTRACTS IMPORTS
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/utilities";
 
 // 2. BASE IMPORTS
 @import "./base/base";
 @import "./base/typography";
 
 // 3. COMPONENTS IMPORTS
+@import "./components/feature";
+@import "./components/button";
+@import "./components/home";
 
 // 4. LAYOUT IMPORTS
+@import "./layout/builders";
+@import "./layout/features";
+@import "./layout/footer";
+@import "./layout/gallery";
+@import "./layout/header";
+@import "./layout/homes";
+@import "./layout/sidebar";
+@import "./layout/story";
 
 // 5. PAGES IMPORTS
 
